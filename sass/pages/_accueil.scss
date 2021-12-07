@@ -1,0 +1,156 @@
+//Ce fichier contient le css s'appliquant spécifiquement à index.html
+.explore {
+    &__restaurant {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background-color: $color-whiteshade;
+        padding-top: 20px;
+        padding-bottom: 20px;        
+
+        &__title {
+            font-size: $font-medium;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        &__subtitle {
+            font-size: $font-small;
+            color: $color-grey;
+            padding-bottom: 10px;
+        }
+        &__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $color-white;
+            font-size: $font-small;
+            border-radius: 20rem;
+            text-decoration: none;
+            width: 250px;
+            height: 50px;
+            margin: auto;
+            background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        }
+    }
+}
+
+.how__it__works {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &__title {
+        display: flex;
+        align-self: center;
+        width: 100%;
+        font-size: $font-medium;
+        font-weight: bold;
+        padding-left: 150px;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        text-decoration: none;
+        color: $color-txt;
+        width: 300px;
+        height: 60px;
+        background-color: $color-whiteshade;
+        border-radius: 1rem;
+        margin-right: 30px;
+    }
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-primary;
+        width: 25px;
+        height: 25px;
+        border-radius: 100rem;
+        color: $color-white;
+        margin-left: -10px;
+    }
+    &__icon {
+        color: $color-icon-inactive;
+        padding-left: 1rem;
+        font-size: $font-small;
+    }
+    &__txt {
+        padding-left: 1rem;
+    }
+}
+
+.restaurants {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $color-whiteshade;
+
+    &__title {
+        width: 100%;
+        padding-left: 150px;
+        margin-top: 50px;
+    }
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 1rem;
+        background-color: $color-white;
+        text-decoration: none;
+        color: $color-txt;
+        width: 500px;
+        height: 350px;
+        margin: 25px 75px;
+
+        &__img {
+            display: flex;
+            border-radius: 1rem 1rem 0 0;
+            width: 100%;
+            height: 75%;
+            object-fit: cover;
+            object-position: bottom;
+
+            &__la__note__enchante {
+            object-position: 0% 62%;
+            }
+        }
+        &__title {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 85%;
+            margin-bottom: 5px;
+            margin-left: 20px;
+        }
+        &__subtitle {
+            display: flex;
+            font-weight: 300;
+            width: 85%;
+            margin-top: 0px;
+            margin-left: 20px;
+        }
+        &__icon {
+            display: flex;
+            align-items: flex-end;
+            //height: 50px;
+            font-size: x-large;
+            // TEST POUR LE CHANGEMENT DE COULEUR ET LE REMPLISSAGE AU HOVER DE L'ICONE
+            &::before {
+                font-weight: bold;
+                transition: color 1s ease-out;
+            }
+            &:hover {
+                
+                color: red;
+            }
+        }
+    }
+}

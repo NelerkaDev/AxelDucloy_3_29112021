@@ -1,0 +1,15 @@
+//Ce fichier contient le CSS du header
+.header {
+    
+    &__title{
+        display: flex;
+        justify-content: center;
+        font-family: $font-logo-title;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    &__icon {
+        display: flex;
+        align-self: center;
+    }
+}

@@ -1,4 +1,16 @@
-//Importation de la police d'écriture
-@import './base/typography';
 //Importation des variables
 @import './utils/variables';
+//Importation des normes appliquées sur le site
+@import './base/base';
+//Importation de la police d'écriture
+@import './base/typography';
+//Importation de la localisation
+@import './components/localisation';
+//Importation du Header
+@import './layouts/header';
+//Importation du Footer
+@import './layouts/footer';
+//Importation du css spécifique à index.html
+@import './pages/accueil';
+//Importation du css spécifique à la_palette_du_gout.html
+@import './pages/palette_du_gout';
