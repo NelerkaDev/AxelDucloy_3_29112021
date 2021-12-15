@@ -1,12 +1,6 @@
-//Ce fichier contient le CSS de la Palette du Goût
+//Ce fichier contient le CSS du delice des sens
 
-/*.header {
-    &__bg {
-    background: url('../../public/images/la_palette_du_gout.jpg');
-    }
-}*/
-//background: url('../../public/images/la_palette_du_gout.jpg');
-.palette__du__gout__main {
+.delice__des__sens__main {
     background-color: $color-whiteshade;
     padding-bottom: 10px;
 
@@ -26,7 +20,7 @@
     }
 }
 
-.palette__du__gout__title {
+.delice__des__sens__title {
     display: flex;
     justify-content: center;
     background-color: $color-whiteshade;
@@ -48,7 +42,7 @@
     }
 }
 
-.palette__du__gout__entrees {
+.delice__des__sens__entrees {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
@@ -85,7 +79,7 @@
     }
 }
 
-.palette__du__gout__plats {
+.delice__des__sens__plats {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;    
@@ -122,7 +116,7 @@
     }
 }
 
-.palette__du__gout__desserts {
+.delice__des__sens__desserts {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;

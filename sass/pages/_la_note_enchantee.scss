@@ -1,12 +1,6 @@
-//Ce fichier contient le CSS de la Palette du Goût
+//Ce fichier contient le CSS de la Note enchantée
 
-/*.header {
-    &__bg {
-    background: url('../../public/images/la_palette_du_gout.jpg');
-    }
-}*/
-//background: url('../../public/images/la_palette_du_gout.jpg');
-.palette__du__gout__main {
+.note__enchantee__main {
     background-color: $color-whiteshade;
     padding-bottom: 10px;
 
@@ -26,7 +20,7 @@
     }
 }
 
-.palette__du__gout__title {
+.note__enchantee__title {
     display: flex;
     justify-content: center;
     background-color: $color-whiteshade;
@@ -48,9 +42,9 @@
     }
 }
 
-.palette__du__gout__entrees {
+.note__enchantee__entrees {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 2rem;
 
     h2 {
@@ -85,9 +79,9 @@
     }
 }
 
-.palette__du__gout__plats {
+.note__enchantee__plats {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 2rem;    
 
     h2 {
@@ -122,9 +116,9 @@
     }
 }
 
-.palette__du__gout__desserts {
+.note__enchantee__desserts {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 2rem;
 
     h2 {

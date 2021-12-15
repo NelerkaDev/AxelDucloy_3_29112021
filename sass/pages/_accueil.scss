@@ -31,6 +31,7 @@
             height: 50px;
             margin: auto;
             background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         }
     }
 }
@@ -159,8 +160,8 @@
                 font-weight: bold;
                 transition: color 1s ease-out;
             }
-            &:hover {                
-                color: red;
+            &:hover {                        
+                color: $color-tertiary;
             }
         }
     }

@@ -1,12 +1,6 @@
-//Ce fichier contient le CSS de la Palette du Goût
+//Ce fichier contient le CSS de À la francaise
 
-/*.header {
-    &__bg {
-    background: url('../../public/images/la_palette_du_gout.jpg');
-    }
-}*/
-//background: url('../../public/images/la_palette_du_gout.jpg');
-.palette__du__gout__main {
+.a__la__francaise__main {
     background-color: $color-whiteshade;
     padding-bottom: 10px;
 
@@ -26,7 +20,7 @@
     }
 }
 
-.palette__du__gout__title {
+.a__la__francaise__title {
     display: flex;
     justify-content: center;
     background-color: $color-whiteshade;
@@ -48,7 +42,7 @@
     }
 }
 
-.palette__du__gout__entrees {
+.a__la__francaise__entrees {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
@@ -85,7 +79,7 @@
     }
 }
 
-.palette__du__gout__plats {
+.a__la__francaise__plats {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;    
@@ -122,7 +116,7 @@
     }
 }
 
-.palette__du__gout__desserts {
+.a__la__francaise__desserts {
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
