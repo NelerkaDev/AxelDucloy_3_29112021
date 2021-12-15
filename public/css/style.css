@@ -136,6 +136,357 @@ a {
   font-size: small;
 }
 
+/*.header {
+    &__bg {
+    background: url('../../public/images/la_palette_du_gout.jpg');
+    }
+}*/
+.restaurants__main {
+  background-color: #f6f6f6;
+  padding-bottom: 10px;
+}
+
+.restaurants__main__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 20rem;
+  text-decoration: none;
+  width: 250px;
+  height: 50px;
+  margin: 30px auto;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.restaurants__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.restaurants__title h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+}
+
+.restaurants__title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  margin-left: 2rem;
+}
+
+.restaurants__title a i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: x-large;
+}
+
+.restaurants__entrees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+@media (max-width: 810px) {
+  .restaurants__entrees {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.restaurants__entrees__enchantee {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 20px;
+}
+
+@media (max-width: 810px) {
+  .restaurants__entrees__enchantee {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+  }
+}
+
+.restaurants__entrees h2 {
+  width: 100px;
+}
+
+.restaurants__entrees h2 span {
+  width: 45px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+@media (max-width: 810px) {
+  .restaurants__entrees h2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.restaurants__entrees a {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 25px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 1rem;
+  width: 400px;
+  height: 75px;
+}
+
+@media (max-width: 810px) {
+  .restaurants__entrees a {
+    margin: 10px 25px;
+  }
+}
+
+.restaurants__entrees a h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.restaurants__entrees a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.restaurants__entrees a p span {
+  margin-right: 20px;
+}
+
+.restaurants__plats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+@media (max-width: 810px) {
+  .restaurants__plats {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.restaurants__plats__enchantee {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 20px;
+}
+
+@media (max-width: 810px) {
+  .restaurants__plats__enchantee {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+  }
+}
+
+.restaurants__plats h2 {
+  width: 100px;
+}
+
+.restaurants__plats h2 span {
+  width: 45px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+@media (max-width: 810px) {
+  .restaurants__plats h2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.restaurants__plats a {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 25px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 1rem;
+  width: 400px;
+  height: 75px;
+}
+
+@media (max-width: 810px) {
+  .restaurants__plats a {
+    margin: 10px 25px;
+  }
+}
+
+.restaurants__plats a h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.restaurants__plats a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.restaurants__plats a p span {
+  margin-right: 20px;
+}
+
+.restaurants__desserts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 2rem;
+}
+
+@media (max-width: 810px) {
+  .restaurants__desserts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.restaurants__desserts__enchantee {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-left: 20px;
+}
+
+@media (max-width: 810px) {
+  .restaurants__desserts__enchantee {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+  }
+}
+
+.restaurants__desserts h2 {
+  width: 100px;
+}
+
+.restaurants__desserts h2 span {
+  width: 55px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+@media (max-width: 810px) {
+  .restaurants__desserts h2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.restaurants__desserts a {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 25px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 1rem;
+  width: 400px;
+  height: 75px;
+}
+
+@media (max-width: 810px) {
+  .restaurants__desserts a {
+    margin: 10px 25px;
+  }
+}
+
+.restaurants__desserts a h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.restaurants__desserts a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.restaurants__desserts a p span {
+  margin-right: 20px;
+}
+
 .explore__restaurant {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,6 +573,15 @@ a {
       flex-wrap: wrap;
 }
 
+@media (max-width: 810px) {
+  .how__it__works__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .how__it__works__container a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +598,14 @@ a {
   background-color: #f6f6f6;
   border-radius: 1rem;
   margin-right: 30px;
+}
+
+@media (max-width: 810px) {
+  .how__it__works__container a {
+    margin-right: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .how__it__works__container i {
@@ -280,7 +648,7 @@ a {
   background-color: #f6f6f6;
 }
 
-.restaurants__title {
+.restaurants__titre {
   width: 100%;
   padding-left: 150px;
   margin-top: 50px;
@@ -300,6 +668,8 @@ a {
   width: 500px;
   height: 350px;
   margin: 25px 75px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .restaurants a img {
@@ -371,806 +741,5 @@ a {
 
 .restaurants a i:hover {
   color: #99E2D0;
-}
-
-/*.header {
-    &__bg {
-    background: url('../../public/images/la_palette_du_gout.jpg');
-    }
-}*/
-.palette__du__gout__main {
-  background-color: #f6f6f6;
-  padding-bottom: 10px;
-}
-
-.palette__du__gout__main__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
-  font-size: 1.2rem;
-  border-radius: 20rem;
-  text-decoration: none;
-  width: 250px;
-  height: 50px;
-  margin: 30px auto;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.palette__du__gout__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f6f6f6;
-}
-
-.palette__du__gout__title h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 2rem;
-}
-
-.palette__du__gout__title a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #000;
-  margin-left: 2rem;
-}
-
-.palette__du__gout__title a i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: x-large;
-}
-
-.palette__du__gout__entrees {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.palette__du__gout__entrees h2 {
-  width: 100px;
-}
-
-.palette__du__gout__entrees a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.palette__du__gout__entrees a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.palette__du__gout__entrees a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.palette__du__gout__entrees a p span {
-  margin-right: 20px;
-}
-
-.palette__du__gout__plats {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.palette__du__gout__plats h2 {
-  width: 100px;
-}
-
-.palette__du__gout__plats a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.palette__du__gout__plats a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.palette__du__gout__plats a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.palette__du__gout__plats a p span {
-  margin-right: 20px;
-}
-
-.palette__du__gout__desserts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.palette__du__gout__desserts h2 {
-  width: 100px;
-}
-
-.palette__du__gout__desserts a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.palette__du__gout__desserts a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.palette__du__gout__desserts a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.palette__du__gout__desserts a p span {
-  margin-right: 20px;
-}
-
-.note__enchantee__main {
-  background-color: #f6f6f6;
-  padding-bottom: 10px;
-}
-
-.note__enchantee__main__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
-  font-size: 1.2rem;
-  border-radius: 20rem;
-  text-decoration: none;
-  width: 250px;
-  height: 50px;
-  margin: 30px auto;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.note__enchantee__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f6f6f6;
-}
-
-.note__enchantee__title h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 2rem;
-}
-
-.note__enchantee__title a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #000;
-  margin-left: 2rem;
-}
-
-.note__enchantee__title a i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: x-large;
-}
-
-.note__enchantee__entrees {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 2rem;
-}
-
-.note__enchantee__entrees h2 {
-  width: 100px;
-}
-
-.note__enchantee__entrees a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.note__enchantee__entrees a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.note__enchantee__entrees a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.note__enchantee__entrees a p span {
-  margin-right: 20px;
-}
-
-.note__enchantee__plats {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 2rem;
-}
-
-.note__enchantee__plats h2 {
-  width: 100px;
-}
-
-.note__enchantee__plats a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.note__enchantee__plats a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.note__enchantee__plats a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.note__enchantee__plats a p span {
-  margin-right: 20px;
-}
-
-.note__enchantee__desserts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 2rem;
-}
-
-.note__enchantee__desserts h2 {
-  width: 100px;
-}
-
-.note__enchantee__desserts a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.note__enchantee__desserts a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.note__enchantee__desserts a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.note__enchantee__desserts a p span {
-  margin-right: 20px;
-}
-
-.a__la__francaise__main {
-  background-color: #f6f6f6;
-  padding-bottom: 10px;
-}
-
-.a__la__francaise__main__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
-  font-size: 1.2rem;
-  border-radius: 20rem;
-  text-decoration: none;
-  width: 250px;
-  height: 50px;
-  margin: 30px auto;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.a__la__francaise__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f6f6f6;
-}
-
-.a__la__francaise__title h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 2rem;
-}
-
-.a__la__francaise__title a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #000;
-  margin-left: 2rem;
-}
-
-.a__la__francaise__title a i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: x-large;
-}
-
-.a__la__francaise__entrees {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.a__la__francaise__entrees h2 {
-  width: 100px;
-}
-
-.a__la__francaise__entrees a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.a__la__francaise__entrees a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.a__la__francaise__entrees a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.a__la__francaise__entrees a p span {
-  margin-right: 20px;
-}
-
-.a__la__francaise__plats {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.a__la__francaise__plats h2 {
-  width: 100px;
-}
-
-.a__la__francaise__plats a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.a__la__francaise__plats a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.a__la__francaise__plats a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.a__la__francaise__plats a p span {
-  margin-right: 20px;
-}
-
-.a__la__francaise__desserts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.a__la__francaise__desserts h2 {
-  width: 100px;
-}
-
-.a__la__francaise__desserts a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.a__la__francaise__desserts a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.a__la__francaise__desserts a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.a__la__francaise__desserts a p span {
-  margin-right: 20px;
-}
-
-.delice__des__sens__main {
-  background-color: #f6f6f6;
-  padding-bottom: 10px;
-}
-
-.delice__des__sens__main__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
-  font-size: 1.2rem;
-  border-radius: 20rem;
-  text-decoration: none;
-  width: 250px;
-  height: 50px;
-  margin: 30px auto;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.delice__des__sens__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #f6f6f6;
-}
-
-.delice__des__sens__title h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 2rem;
-}
-
-.delice__des__sens__title a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #000;
-  margin-left: 2rem;
-}
-
-.delice__des__sens__title a i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: x-large;
-}
-
-.delice__des__sens__entrees {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.delice__des__sens__entrees h2 {
-  width: 100px;
-}
-
-.delice__des__sens__entrees a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.delice__des__sens__entrees a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.delice__des__sens__entrees a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.delice__des__sens__entrees a p span {
-  margin-right: 20px;
-}
-
-.delice__des__sens__plats {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.delice__des__sens__plats h2 {
-  width: 100px;
-}
-
-.delice__des__sens__plats a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.delice__des__sens__plats a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.delice__des__sens__plats a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.delice__des__sens__plats a p span {
-  margin-right: 20px;
-}
-
-.delice__des__sens__desserts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-top: 2rem;
-}
-
-.delice__des__sens__desserts h2 {
-  width: 100px;
-}
-
-.delice__des__sens__desserts a {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 0 25px;
-  background-color: #fff;
-  color: #000;
-  border-radius: 1rem;
-  width: 400px;
-  height: 75px;
-}
-
-.delice__des__sens__desserts a h3 {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-}
-
-.delice__des__sens__desserts a p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.delice__des__sens__desserts a p span {
-  margin-right: 20px;
 }
 /*# sourceMappingURL=style.css.map */

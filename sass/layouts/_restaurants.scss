@@ -1,6 +1,12 @@
-//Ce fichier contient le CSS de la Note enchantée
+//Ce fichier contient le CSS de la Palette du Goût
 
-.note__enchantee__main {
+/*.header {
+    &__bg {
+    background: url('../../public/images/la_palette_du_gout.jpg');
+    }
+}*/
+//background: url('../../public/images/la_palette_du_gout.jpg');
+.restaurants__main {
     background-color: $color-whiteshade;
     padding-bottom: 10px;
 
@@ -20,7 +26,7 @@
     }
 }
 
-.note__enchantee__title {
+.restaurants__title {
     display: flex;
     justify-content: center;
     background-color: $color-whiteshade;
@@ -42,13 +48,39 @@
     }
 }
 
-.note__enchantee__entrees {
+.restaurants__entrees {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 2rem;
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__enchantee {
+        justify-content: left;
+        margin-left: 20px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
 
     h2 {
         width: 100px;
+
+        span {
+            width: 45px;
+            border-bottom: 3px solid $color-tertiary;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     a {
@@ -59,6 +91,10 @@
         border-radius: 1rem;
         width: 400px;
         height: 75px;
+
+        @media (max-width: $tablet) {
+            margin: 10px 25px;
+        }
 
         h3 {
             margin-top: 15px;
@@ -79,13 +115,39 @@
     }
 }
 
-.note__enchantee__plats {
+.restaurants__plats {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 2rem;    
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__enchantee {
+        justify-content: left;
+        margin-left: 20px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
 
     h2 {
         width: 100px;
+
+        span {
+            width: 45px;
+            border-bottom: 3px solid $color-tertiary;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
     
     a {
@@ -96,6 +158,10 @@
         border-radius: 1rem;
         width: 400px;
         height: 75px;
+
+        @media (max-width: $tablet) {
+            margin: 10px 25px;
+        }
 
         h3 {
             margin-top: 15px;
@@ -116,13 +182,39 @@
     }
 }
 
-.note__enchantee__desserts {
+.restaurants__desserts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 2rem;
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__enchantee {
+        justify-content: left;
+        margin-left: 20px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
 
     h2 {
         width: 100px;
+
+        span {
+            width: 55px;
+            border-bottom: 3px solid $color-tertiary;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
     
     a {
@@ -133,6 +225,10 @@
         border-radius: 1rem;
         width: 400px;
         height: 75px;
+
+        @media (max-width: $tablet) {
+            margin: 10px 25px;
+        }
 
         h3 {
             margin-top: 15px;
