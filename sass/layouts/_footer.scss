@@ -5,9 +5,20 @@ footer {
     color: $color-white;
 }
 
+ul {
+    @media (max-width: $mobile) {
+    padding-left: 5%;
+    }  
+}
+
+
 ul li {
     list-style-type: none;
     padding: 5px 110px;
+
+    @media (max-width: $mobile) {
+        padding: 5px 0;
+    }
 }
 
 a {
@@ -25,6 +36,10 @@ a {
             padding-left: 150px;
             padding-top: 1rem;
             font-family: $font-logo-title;
+
+            @media (max-width: $mobile) {
+                padding-left: 5%;
+            }
         }
         &__txt {
             padding-left: 0.5rem;

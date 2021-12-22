@@ -31,9 +31,21 @@
     justify-content: center;
     background-color: $color-whiteshade;
 
+    @media (max-width: $mobile) {
+        position: relative;
+        z-index: 1;
+        margin-top: -47px;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+    }
+
     h2 {
         font-family: $font-logo-title;
         font-size: $font-large;
+
+        @media (max-width: $mobile) {
+            font-size: $font-medium;
+        }
     }
     a {
         
@@ -58,6 +70,10 @@
         justify-content: center;
     }
 
+    @media (max-width: $mobile) {
+        padding-top: 0;
+    }
+
     &__enchantee {
         justify-content: left;
         margin-left: 20px;
@@ -69,6 +85,7 @@
     }
 
     h2 {
+        display: flex;
         width: 100px;
 
         span {
@@ -80,6 +97,11 @@
             width: 100%;
             display: flex;
             justify-content: center;
+        }
+
+        @media (max-width: $mobile) {
+            justify-content: flex-start;
+            padding-left: 7%;
         }
     }
 
@@ -96,20 +118,49 @@
             margin: 10px 25px;
         }
 
+        @media (max-width: $mobile) {
+            margin: 10px 15px;
+            width: 345px;
+            min-width: 0;
+        }
+
+        div {
+            height: inherit;
+        }
+
         h3 {
             margin-top: 15px;
             margin-bottom: 5px;
             margin-left: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             
         }
         p {
+            //text-overflow: ellipsis; met des "..." si le texte déborde
             display: flex;
             justify-content: space-between;
-            margin-top: 5px;
-            margin-left: 10px;  
-            
-            span {
+            margin-top: 0;
+
+            .restaurants__entrees__desc {
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 0;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: calc(70%);
+            }
+
+            .restaurants__entrees__prix {
                 margin-right: 20px;
+                margin-top: 5px;
+                font-weight: bold;
+
+                @media (max-width: $mobile) {
+                    flex-shrink: 0;
+                }
             }
         }
     }
@@ -125,6 +176,10 @@
         justify-content: center;
     }
 
+    @media (max-width: $mobile) {
+        padding-top: 0;
+    }
+
     &__enchantee {
         justify-content: left;
         margin-left: 20px;
@@ -136,6 +191,7 @@
     }
 
     h2 {
+        display: flex;
         width: 100px;
 
         span {
@@ -148,9 +204,16 @@
             display: flex;
             justify-content: center;
         }
+
+        @media (max-width: $mobile) {
+            justify-content: flex-start;
+            padding-left: 7%;
+        }
     }
     
     a {
+        display: flex;
+        flex-direction: column;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         margin: 0 25px;
         background-color: $color-white;
@@ -163,20 +226,49 @@
             margin: 10px 25px;
         }
 
+        @media (max-width: $mobile) {
+            margin: 10px 15px;
+            width: 345px;
+            min-width: 0;
+        }
+
+        div {
+            height: inherit;
+        }
+        
         h3 {
             margin-top: 15px;
             margin-bottom: 5px;
             margin-left: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             
         }
         p {
+            //text-overflow: ellipsis; met des "..." si le texte déborde
             display: flex;
             justify-content: space-between;
-            margin-top: 5px;
-            margin-left: 10px;
+            margin-top: 0;
 
-            span {
+            .restaurants__plats__desc {
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 0;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: calc(70%);
+            }
+
+            .restaurants__plats__prix {
                 margin-right: 20px;
+                margin-top: 5px;
+                font-weight: bold;
+
+                @media (max-width: $mobile) {
+                    flex-shrink: 0;
+                }
             }
         }
     }
@@ -192,6 +284,10 @@
         justify-content: center;
     }
 
+    @media (max-width: $mobile) {
+        padding-top: 0;
+    }
+
     &__enchantee {
         justify-content: left;
         margin-left: 20px;
@@ -203,6 +299,7 @@
     }
 
     h2 {
+        display: flex;
         width: 100px;
 
         span {
@@ -214,6 +311,11 @@
             width: 100%;
             display: flex;
             justify-content: center;
+        }
+
+        @media (max-width: $mobile) {
+            justify-content: flex-start;
+            padding-left: 7%;
         }
     }
     
@@ -230,20 +332,49 @@
             margin: 10px 25px;
         }
 
+        @media (max-width: $mobile) {
+            margin: 10px 15px;
+            width: 345px;
+            min-width: 0;
+        }
+
+        div {
+            height: inherit;
+        }
+
         h3 {
             margin-top: 15px;
             margin-bottom: 5px;
             margin-left: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             
         }
         p {
+            //text-overflow: ellipsis; met des "..." si le texte déborde
             display: flex;
             justify-content: space-between;
-            margin-top: 5px;
-            margin-left: 10px;
+            margin-top: 0;
 
-            span {
+            .restaurants__desserts__desc {
+                margin-top: 5px;
+                margin-left: 10px;
+                margin-bottom: 0;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                width: calc(70%);
+            }
+
+            .restaurants__desserts__prix {
                 margin-right: 20px;
+                margin-top: 5px;
+                font-weight: bold;
+
+                @media (max-width: $mobile) {
+                    flex-shrink: 0;
+                }
             }
         }
     }

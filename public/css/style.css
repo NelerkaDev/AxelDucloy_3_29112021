@@ -59,6 +59,12 @@ body {
   position: relative;
 }
 
+@media (max-width: 375px) {
+  .header__title {
+    font-size: 2rem;
+  }
+}
+
 .header__title a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,6 +82,13 @@ body {
   top: 30%;
 }
 
+@media (max-width: 375px) {
+  .header__icon {
+    font-size: x-large;
+    top: 17%;
+  }
+}
+
 .header__bg {
   width: 100%;
   height: 500px;
@@ -83,6 +96,12 @@ body {
      object-fit: cover;
   -o-object-position: 0 55%;
      object-position: 0 55%;
+}
+
+@media (max-width: 375px) {
+  .header__bg {
+    height: 250px;
+  }
 }
 
 .header__bg__francaise {
@@ -95,14 +114,33 @@ body {
      object-position: 0 70%;
 }
 
+@media (max-width: 810px) {
+  .header__bg__enchantee {
+    -o-object-position: 0 63%;
+       object-position: 0 63%;
+  }
+}
+
 footer {
   background-color: #353535;
   color: #fff;
 }
 
+@media (max-width: 375px) {
+  ul {
+    padding-left: 5%;
+  }
+}
+
 ul li {
   list-style-type: none;
   padding: 5px 110px;
+}
+
+@media (max-width: 375px) {
+  ul li {
+    padding: 5px 0;
+  }
 }
 
 a {
@@ -125,6 +163,12 @@ a {
   padding-left: 150px;
   padding-top: 1rem;
   font-family: "Shrikhand", cursive;
+}
+
+@media (max-width: 375px) {
+  .footer__contenu__title {
+    padding-left: 5%;
+  }
 }
 
 .footer__contenu__txt {
@@ -179,9 +223,25 @@ a {
   background-color: #f6f6f6;
 }
 
+@media (max-width: 375px) {
+  .restaurants__title {
+    position: relative;
+    z-index: 1;
+    margin-top: -47px;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+  }
+}
+
 .restaurants__title h2 {
   font-family: "Shrikhand", cursive;
   font-size: 2rem;
+}
+
+@media (max-width: 375px) {
+  .restaurants__title h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .restaurants__title a {
@@ -222,6 +282,12 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__entrees {
+    padding-top: 0;
+  }
+}
+
 .restaurants__entrees__enchantee {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -239,6 +305,9 @@ a {
 }
 
 .restaurants__entrees h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100px;
 }
 
@@ -259,6 +328,15 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__entrees h2 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 7%;
+  }
+}
+
 .restaurants__entrees a {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -276,10 +354,25 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__entrees a {
+    margin: 10px 15px;
+    width: 345px;
+    min-width: 0;
+  }
+}
+
+.restaurants__entrees a div {
+  height: inherit;
+}
+
 .restaurants__entrees a h3 {
   margin-top: 15px;
   margin-bottom: 5px;
   margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .restaurants__entrees a p {
@@ -289,12 +382,30 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 0;
 }
 
-.restaurants__entrees a p span {
+.restaurants__entrees a p .restaurants__entrees__desc {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(70%);
+}
+
+.restaurants__entrees a p .restaurants__entrees__prix {
   margin-right: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  .restaurants__entrees a p .restaurants__entrees__prix {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
 }
 
 .restaurants__plats {
@@ -317,6 +428,12 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__plats {
+    padding-top: 0;
+  }
+}
+
 .restaurants__plats__enchantee {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -334,6 +451,9 @@ a {
 }
 
 .restaurants__plats h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100px;
 }
 
@@ -354,7 +474,23 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__plats h2 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 7%;
+  }
+}
+
 .restaurants__plats a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0 25px;
@@ -371,10 +507,25 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__plats a {
+    margin: 10px 15px;
+    width: 345px;
+    min-width: 0;
+  }
+}
+
+.restaurants__plats a div {
+  height: inherit;
+}
+
 .restaurants__plats a h3 {
   margin-top: 15px;
   margin-bottom: 5px;
   margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .restaurants__plats a p {
@@ -384,12 +535,30 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 0;
 }
 
-.restaurants__plats a p span {
+.restaurants__plats a p .restaurants__plats__desc {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(70%);
+}
+
+.restaurants__plats a p .restaurants__plats__prix {
   margin-right: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  .restaurants__plats a p .restaurants__plats__prix {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
 }
 
 .restaurants__desserts {
@@ -412,6 +581,12 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__desserts {
+    padding-top: 0;
+  }
+}
+
 .restaurants__desserts__enchantee {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -429,6 +604,9 @@ a {
 }
 
 .restaurants__desserts h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100px;
 }
 
@@ -449,6 +627,15 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__desserts h2 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 7%;
+  }
+}
+
 .restaurants__desserts a {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -466,10 +653,25 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .restaurants__desserts a {
+    margin: 10px 15px;
+    width: 345px;
+    min-width: 0;
+  }
+}
+
+.restaurants__desserts a div {
+  height: inherit;
+}
+
 .restaurants__desserts a h3 {
   margin-top: 15px;
   margin-bottom: 5px;
   margin-left: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .restaurants__desserts a p {
@@ -479,12 +681,30 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 0;
 }
 
-.restaurants__desserts a p span {
+.restaurants__desserts a p .restaurants__desserts__desc {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(70%);
+}
+
+.restaurants__desserts a p .restaurants__desserts__prix {
   margin-right: 20px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 375px) {
+  .restaurants__desserts a p .restaurants__desserts__prix {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
 }
 
 .explore__restaurant {
@@ -502,6 +722,12 @@ a {
   background-color: #f6f6f6;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+@media (max-width: 375px) {
+  .explore__restaurant {
+    padding-bottom: 40px;
+  }
 }
 
 .explore__restaurant__title {
@@ -563,6 +789,12 @@ a {
   font-size: 1.5rem;
   font-weight: bold;
   padding-left: 150px;
+}
+
+@media (max-width: 375px) {
+  .how__it__works__title {
+    padding-left: 4%;
+  }
 }
 
 .how__it__works__container {
@@ -648,10 +880,22 @@ a {
   background-color: #f6f6f6;
 }
 
+@media (max-width: 375px) {
+  .restaurants {
+    padding-bottom: 40px;
+  }
+}
+
 .restaurants__titre {
   width: 100%;
   padding-left: 150px;
   margin-top: 50px;
+}
+
+@media (max-width: 375px) {
+  .restaurants__titre {
+    padding-left: 4%;
+  }
 }
 
 .restaurants a {
@@ -672,6 +916,14 @@ a {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 375px) {
+  .restaurants a {
+    width: 340px;
+    height: 250px;
+    margin: 15px auto;
+  }
+}
+
 .restaurants a img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,6 +935,12 @@ a {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom;
+}
+
+@media (max-width: 375px) {
+  .restaurants a img {
+    height: 70%;
+  }
 }
 
 .restaurants a .la__note__enchantee {
@@ -697,6 +955,7 @@ a {
   padding: 10px 15px;
   border-radius: 5px;
   background-color: #99E2D0;
+  color: #008766;
 }
 
 .restaurants a h3 {
@@ -713,6 +972,13 @@ a {
   margin-left: 20px;
 }
 
+@media (max-width: 375px) {
+  .restaurants a h3 {
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+}
+
 .restaurants a p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -721,6 +987,12 @@ a {
   width: 85%;
   margin-top: 0px;
   margin-left: 20px;
+}
+
+@media (max-width: 375px) {
+  .restaurants a p {
+    margin-left: 10px;
+  }
 }
 
 .restaurants a i {

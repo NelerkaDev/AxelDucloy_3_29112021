@@ -9,6 +9,10 @@
         padding-top: 20px;
         padding-bottom: 20px;        
 
+        @media (max-width: $mobile) {
+            padding-bottom: 40px;
+        }
+
         &__title {
             font-size: $font-medium;
             font-weight: bold;
@@ -51,6 +55,10 @@
         font-size: $font-medium;
         font-weight: bold;
         padding-left: 150px;
+
+        @media (max-width: $mobile) {
+            padding-left: 4%;
+        }
     }
     &__container {
         display: flex;
@@ -109,10 +117,18 @@
     flex-wrap: wrap;
     background-color: $color-whiteshade;
 
+    @media (max-width: $mobile) {
+        padding-bottom: 40px;
+    }
+
     &__titre {
         width: 100%;
         padding-left: 150px;
         margin-top: 50px;
+
+        @media (max-width: $mobile) {
+            padding-left: 4%;
+        }
     }
     a {
         display: flex;
@@ -127,6 +143,12 @@
         margin: 25px 75px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
+        @media (max-width: $mobile) {
+            width: 340px;
+            height: 250px;
+            margin: 15px auto;
+        }
+
         img {
             display: flex;
             border-radius: 1rem 1rem 0 0;
@@ -135,6 +157,9 @@
             object-fit: cover;
             object-position: bottom;
 
+            @media (max-width:$mobile) {
+                height: 70%;;
+            }
             
         }
         .la__note__enchantee {
@@ -147,6 +172,7 @@
             padding: 10px 15px;
             border-radius: 5px;
             background-color: $color-tertiary;
+            color: $color-new;
         }
         h3 {
             display: flex;
@@ -155,6 +181,11 @@
             width: 85%;
             margin-bottom: 5px;
             margin-left: 20px;
+
+            @media (max-width: $mobile) {
+                margin-left: 10px;
+                margin-top: 15px;
+            }
         }
         p {
             display: flex;
@@ -162,11 +193,14 @@
             width: 85%;
             margin-top: 0px;
             margin-left: 20px;
+
+            @media (max-width: $mobile) {
+                margin-left: 10px;
+            }
         }
         i {
             display: flex;
             align-items: flex-end;
-            //height: 50px;
             font-size: x-large;
             // TEST POUR LE CHANGEMENT DE COULEUR ET LE REMPLISSAGE AU HOVER DE L'ICONE
             &::before {
