@@ -36,22 +36,27 @@
     &__bg {
         width: 100%;
         height: 500px;
-        object-fit: cover;
-        object-position: 0 55%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 0 55%;
+           object-position: 0 55%;
 
         @media (max-width: $mobile) {
             height: 250px;
         }
 
         &__francaise {
-            object-position: 0 62%;
+            -o-object-position: 0 62%;
+               object-position: 0 62%;
         }
         &__delice {
-            object-position: 0 70%;
+            -o-object-position: 0 70%;
+               object-position: 0 70%;
         }
         &__enchantee {
             @media (max-width: $tablet) {
-                object-position: 0 63%;
+                -o-object-position: 0 63%;
+                   object-position: 0 63%;
             }
         }
     }

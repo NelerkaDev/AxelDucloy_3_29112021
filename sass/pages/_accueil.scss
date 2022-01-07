@@ -1,4 +1,97 @@
 //Ce fichier contient le css s'appliquant spécifiquement à index.html
+#spinner__container {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    -webkit-animation: 2.5s linear spinner-end;
+            animation: 2.5s linear spinner-end;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes spinner-end {
+    0% {
+        opacity: 1;
+        z-index: 10;
+        background-color: #fff;
+    }
+    99% {
+        opacity: 1;
+        z-index: 10;
+        background-color: #fff;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+        background-color: transparent;
+    }
+}
+
+@keyframes spinner-end {
+    0% {
+        opacity: 1;
+        z-index: 10;
+        background-color: #fff;
+    }
+    99% {
+        opacity: 1;
+        z-index: 10;
+        background-color: #fff;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+        background-color: transparent;
+    }
+}
+
+#spinner::after {
+    z-index: 1001;
+    -webkit-animation: 2.5s linear spinner-anim;
+            animation: 2.5s linear spinner-anim;
+    -webkit-animation-play-state: inherit;
+            animation-play-state: inherit;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    border: solid 5px $color-secondary;
+    border-radius: 50%;
+    border-bottom-color: $color-tertiary;
+    content: "";
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 150px;
+    will-change: transform;
+}
+
+@-webkit-keyframes spinner-anim {
+    99% {
+        opacity: 1;
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+
+@keyframes spinner-anim {
+    99% {
+        opacity: 1;
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}
+
 .explore {
     &__restaurant {
         display: flex;
@@ -7,7 +100,7 @@
         flex-direction: column;
         background-color: $color-whiteshade;
         padding-top: 20px;
-        padding-bottom: 20px;        
+        padding-bottom: 40px;        
 
         @media (max-width: $mobile) {
             padding-bottom: 40px;
@@ -36,6 +129,11 @@
             margin: auto;
             background: linear-gradient(to bottom right, $color-secondary, $color-primary);
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+            &:hover {
+                background: linear-gradient(to bottom right, lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+            }
         }
     }
 }
@@ -46,7 +144,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     &__title {
         display: flex;
@@ -64,7 +162,6 @@
         display: flex;
         flex-wrap: wrap;
 
-        //Tablet responsive
         @media (max-width: $tablet) {
             flex-direction: column;
         }
@@ -80,19 +177,28 @@
             background-color: $color-whiteshade;
             border-radius: 1rem;
             margin-right: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+            i {
+                color: $color-icon-inactive;
+                padding-left: 1rem;
+                font-size: $font-small;
+            }
+
+            &:hover {
+                background-color: $color-hover-how-it-works;
+
+                i {
+                    color: $color-primary;
+                }
+            }
 
             @media (max-width: $tablet) {
                 margin-right: 0;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
             }
-        }
-
-        i {
-            color: $color-icon-inactive;
-            padding-left: 1rem;
-            font-size: $font-small;
-        }
+        }        
     }
 
     &__number {
@@ -154,8 +260,10 @@
             border-radius: 1rem 1rem 0 0;
             width: 100%;
             height: 75%;
-            object-fit: cover;
-            object-position: bottom;
+            -o-object-fit: cover;
+               object-fit: cover;
+            -o-object-position: bottom;
+               object-position: bottom;
 
             @media (max-width:$mobile) {
                 height: 70%;;
@@ -163,7 +271,8 @@
             
         }
         .la__note__enchantee {
-            object-position: 0% 62%; 
+            -o-object-position: 0% 62%;
+               object-position: 0% 62%; 
         }
         span {
             position: absolute;
@@ -198,18 +307,68 @@
                 margin-left: 10px;
             }
         }
+        .heart__appears { 
+            position: absolute;
+            right: 30px;
+            bottom: 36px;
+            opacity: 0;
+            font-size: 26px;
+
+            &:hover {
+                -webkit-animation: fill-heart 1.5s linear;
+                        animation: fill-heart 1.5s linear;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
+            }
+
+            @-webkit-keyframes fill-heart {
+                0% { 
+                    opacity: 0; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent; 
+                }
+                50% { 
+                    opacity: 0.5; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
+                }
+                100% { 
+                    opacity: 1; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
+                }
+            }
+
+            @keyframes fill-heart {
+                0% { 
+                    opacity: 0; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent; 
+                }
+                50% { 
+                    opacity: 0.5; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
+                }
+                100% { 
+                    opacity: 1; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
+                }
+            }
+        }
+
         i {
             display: flex;
             align-items: flex-end;
             font-size: x-large;
-            // TEST POUR LE CHANGEMENT DE COULEUR ET LE REMPLISSAGE AU HOVER DE L'ICONE
-            &::before {
-                font-weight: bold;
-                transition: color 1s ease-out;
-            }
-            &:hover {                        
-                color: $color-tertiary;
-            }
+                        
         }
     }
 }
