@@ -1,0 +1,1024 @@
+//Ce fichier contient le CSS de la Palette du Goût
+
+.restaurants__main {
+    background-color: $color-whiteshade;
+    padding-bottom: 10px;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        font-size: $font-small;
+        border-radius: 20rem;
+        text-decoration: none;
+        width: 250px;
+        height: 50px;
+        margin: 30px auto;
+        background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+        &:hover {
+            background: linear-gradient(to bottom right, lighten($color-secondary, 5%) 0%, lighten($color-primary, 5%) 100%);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+        }
+    }
+}
+
+.restaurants__title {
+    display: flex;
+    justify-content: center;
+    background-color: $color-whiteshade;
+
+    @media (max-width: $mobile) {
+        position: relative;
+        z-index: 1;
+        margin-top: -47px;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+    }
+
+    h2 {
+        font-family: $font-logo-title;
+        font-size: $font-large;
+
+        @media (max-width: $mobile) {
+            font-size: $font-medium;
+        }
+    }
+    a {
+        
+        display: flex;
+        position: relative;
+        color: $color-txt;
+        margin-left: 2rem;
+
+        .heart__appears { 
+            position: absolute;
+            top: 36%;
+            left: -4%;
+            opacity: 0;
+            font-size: 26px;
+
+            &:hover {
+                -webkit-animation: fill-heart 1.5s linear;
+                        animation: fill-heart 1.5s linear;
+                -webkit-animation-fill-mode: forwards;
+                        animation-fill-mode: forwards;
+            }
+
+            @-webkit-keyframes fill-heart {
+                0% { 
+                    opacity: 0; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent; 
+                }
+                50% { 
+                    opacity: 0.5; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
+                }
+                100% { 
+                    opacity: 1; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
+                }
+            }
+
+            @keyframes fill-heart {
+                0% { 
+                    opacity: 0; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent; 
+                }
+                50% { 
+                    opacity: 0.5; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
+                }
+                100% { 
+                    opacity: 1; 
+                    background: linear-gradient($color-primary, $color-secondary); 
+                    -webkit-background-clip: text; 
+                    -webkit-text-fill-color: transparent;  
+                }
+            }
+        }
+        i {
+            display: flex;
+            align-items: center;
+            font-size: x-large;
+        }
+    }
+}
+
+.restaurants__entrees {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    opacity: 0;
+    -webkit-animation: entrees-appears 2s linear;
+            animation: entrees-appears 2s linear;
+    -webkit-animation-play-state: inherit;
+            animation-play-state: inherit;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+
+    @-webkit-keyframes entrees-appears {
+        0% { opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes entrees-appears {
+        0% { opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media (max-width: $mobile) {
+        padding-top: 0;
+    }
+
+    &__enchantee {
+        justify-content: left;
+        margin-left: 20px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
+
+    h2 {
+        display: flex;
+        width: 100px;
+
+        span {
+            width: 45px;
+            border-bottom: 3px solid $color-tertiary;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: $mobile) {
+            justify-content: flex-start;
+            padding-left: 7%;
+        }
+    }
+
+    a {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin: 0 25px;
+        background-color: $color-white;
+        color: $color-txt;
+        border-radius: 1rem;
+        width: 400px;
+        height: 75px;
+
+        @media (max-width: $tablet) {
+            margin: 10px 25px;
+        }
+
+        @media (max-width: $mobile) {
+            margin: 10px 15px;
+            width: 345px;
+            min-width: 0;
+        }
+                
+        &:hover .anim {
+            -webkit-animation: expand-spin 500ms ease-out;
+                    animation: expand-spin 500ms ease-out;
+            -webkit-animation-play-state: inherit;
+                    animation-play-state: inherit;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes expand-spin {
+            0% { 
+                width: 0; 
+                background-color: $color-tertiary; 
+                opacity: 1;
+            }
+            25% { 
+                width: 65px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            50% { 
+                width: 70px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            75% { 
+                width: 75px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            100% { 
+                width: 80px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+        }
+
+        @keyframes expand-spin {
+            0% { 
+                width: 0; 
+                background-color: $color-tertiary; 
+                opacity: 1;
+            }
+            25% { 
+                width: 65px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            50% { 
+                width: 70px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            75% { 
+                width: 75px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            100% { 
+                width: 80px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+        }  
+
+        &:hover .checked {
+            -webkit-animation: rotate-check 500ms linear;
+                    animation: rotate-check 500ms linear;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-play-state: inherit;
+                    animation-play-state: inherit;
+
+            @-webkit-keyframes rotate-check {
+                0% {
+                    opacity: 0;
+                }
+                1% {
+                    opacity: 1;
+                    transform: rotate(0deg);
+                    transform-origin: center;
+                }
+                25% {
+                    opacity: 1;
+                    transform: rotate(90deg);
+                    transform-origin: center;
+                }
+                50% {
+                    opacity: 1;
+                    transform: rotate(180deg);
+                    transform-origin: center;
+                }
+                75% {
+                    opacity: 1;
+                    transform: rotate(270deg);
+                    transform-origin: center;
+                }
+                100% {
+                    opacity: 1;
+                    transform: rotate(360deg);
+                    transform-origin: center;
+                }
+            }
+
+            @keyframes rotate-check {
+                0% {
+                    opacity: 0;
+                }
+                1% {
+                    opacity: 1;
+                    transform: rotate(0deg);
+                    transform-origin: center;
+                }
+                25% {
+                    opacity: 1;
+                    transform: rotate(90deg);
+                    transform-origin: center;
+                }
+                50% {
+                    opacity: 1;
+                    transform: rotate(180deg);
+                    transform-origin: center;
+                }
+                75% {
+                    opacity: 1;
+                    transform: rotate(270deg);
+                    transform-origin: center;
+                }
+                100% {
+                    opacity: 1;
+                    transform: rotate(360deg);
+                    transform-origin: center;
+                }
+            }
+        }
+
+        div {
+            display: flex;
+
+            .conteneur__entrees {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                margin: 0 auto;
+
+                h3 {
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    margin-left: 10px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                }
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 0;
+                    margin-bottom: 0;
+        
+                    .restaurants__entrees__desc {
+                        margin-top: 5px;
+                        margin-left: 10px;
+                        margin-bottom: 0;
+                        overflow-x: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: calc(70%);
+                    }
+        
+                    .restaurants__entrees__prix {
+                        margin-right: 20px;
+                        margin-top: 5px;
+                        font-weight: bold;
+        
+                        @media (max-width: $mobile) {
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+
+            .anim {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 0;
+                border-radius: 0 1rem 1rem 0;
+                
+                .checked {
+                    display: inline-block;
+                    font-size: x-large;
+                    color: $color-white;
+                    opacity: 0;
+                }
+            }            
+        }
+    }
+}
+
+.restaurants__plats {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem; 
+    opacity: 0;
+    -webkit-animation: plats-appears 2s linear;
+            animation: plats-appears 2s linear;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-play-state: inherit;
+            animation-play-state: inherit;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+
+    @-webkit-keyframes plats-appears {
+        0% { opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes plats-appears {
+        0% { opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }   
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media (max-width: $mobile) {
+        padding-top: 0;
+    }
+
+    &__enchantee {
+        justify-content: left;
+        margin-left: 20px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
+
+    h2 {
+        display: flex;
+        width: 100px;
+
+        span {
+            width: 45px;
+            border-bottom: 3px solid $color-tertiary;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: $mobile) {
+            justify-content: flex-start;
+            padding-left: 7%;
+        }
+    }
+    
+    a {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin: 0 25px;
+        background-color: $color-white;
+        color: $color-txt;
+        border-radius: 1rem;
+        width: 400px;
+        height: 75px;
+
+        @media (max-width: $tablet) {
+            margin: 10px 25px;
+        }
+
+        @media (max-width: $mobile) {
+            margin: 10px 15px;
+            width: 345px;
+            min-width: 0;
+        }
+                
+        &:hover .anim {
+            -webkit-animation: expand-spin 500ms ease-out;
+                    animation: expand-spin 500ms ease-out;
+            -webkit-animation-play-state: inherit;
+                    animation-play-state: inherit;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes expand-spin {
+            0% { 
+                width: 0; 
+                background-color: $color-tertiary; 
+                opacity: 1;
+            }
+            25% { 
+                width: 65px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            50% { 
+                width: 70px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            75% { 
+                width: 75px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            100% { 
+                width: 80px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+        }
+
+        @keyframes expand-spin {
+            0% { 
+                width: 0; 
+                background-color: $color-tertiary; 
+                opacity: 1;
+            }
+            25% { 
+                width: 65px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            50% { 
+                width: 70px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            75% { 
+                width: 75px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            100% { 
+                width: 80px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+        }  
+
+        &:hover .checked {
+            -webkit-animation: rotate-check 500ms linear;
+                    animation: rotate-check 500ms linear;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-play-state: inherit;
+                    animation-play-state: inherit;
+
+            @-webkit-keyframes rotate-check {
+                0% {
+                    opacity: 0;
+                }
+                1% {
+                    opacity: 1;
+                    transform: rotate(0deg);
+                    transform-origin: center;
+                }
+                25% {
+                    opacity: 1;
+                    transform: rotate(90deg);
+                    transform-origin: center;
+                }
+                50% {
+                    opacity: 1;
+                    transform: rotate(180deg);
+                    transform-origin: center;
+                }
+                75% {
+                    opacity: 1;
+                    transform: rotate(270deg);
+                    transform-origin: center;
+                }
+                100% {
+                    opacity: 1;
+                    transform: rotate(360deg);
+                    transform-origin: center;
+                }
+            }
+
+            @keyframes rotate-check {
+                0% {
+                    opacity: 0;
+                }
+                1% {
+                    opacity: 1;
+                    transform: rotate(0deg);
+                    transform-origin: center;
+                }
+                25% {
+                    opacity: 1;
+                    transform: rotate(90deg);
+                    transform-origin: center;
+                }
+                50% {
+                    opacity: 1;
+                    transform: rotate(180deg);
+                    transform-origin: center;
+                }
+                75% {
+                    opacity: 1;
+                    transform: rotate(270deg);
+                    transform-origin: center;
+                }
+                100% {
+                    opacity: 1;
+                    transform: rotate(360deg);
+                    transform-origin: center;
+                }
+            }
+        }
+
+        &:hover .restaurants__plats__desc__large {
+            -webkit-animation: reduce-width 500ms linear;
+                    animation: reduce-width 500ms linear;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-play-state: inherit;
+                    animation-play-state: inherit;
+
+            @-webkit-keyframes reduce-width {
+                0% { width: 280px;}
+                25% { width: 270px;}
+                50% { width: 265px;}
+                75% { width: 260px;}
+                100% { width: 250px;}
+            }
+
+            @keyframes reduce-width {
+                0% { width: 280px;}
+                25% { width: 270px;}
+                50% { width: 265px;}
+                75% { width: 260px;}
+                100% { width: 250px;}
+            }
+        }
+
+        div {
+            display: flex;
+
+            .conteneur__plats {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                margin: 0 auto;
+
+                h3 {
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    margin-left: 10px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                }
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 0;
+                    margin-bottom: 0;
+        
+                    .restaurants__plats__desc {
+                        margin-top: 5px;
+                        margin-left: 10px;
+                        margin-bottom: 0;
+                        overflow-x: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: calc(70%);
+                    }
+        
+                    .restaurants__plats__prix {
+                        margin-right: 20px;
+                        margin-top: 5px;
+                        font-weight: bold;
+        
+                        @media (max-width: $mobile) {
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+
+            .anim {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 0;
+                border-radius: 0 1rem 1rem 0;
+                
+                .checked {
+                    display: inline-block;
+                    font-size: x-large;
+                    color: $color-white;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.restaurants__desserts {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem; 
+    opacity: 0;
+    -webkit-animation: desserts-appears 2s linear;
+            animation: desserts-appears 2s linear;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-play-state: inherit;
+            animation-play-state: inherit;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+
+    @-webkit-keyframes desserts-appears {
+        0% { opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes desserts-appears {
+        0% { opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { opacity: 1; }
+    }
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media (max-width: $mobile) {
+        padding-top: 0;
+    }
+
+    &__enchantee {
+        justify-content: left;
+        margin-left: 20px;
+
+        @media (max-width: $tablet) {
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
+
+    h2 {
+        display: flex;
+        width: 100px;
+
+        span {
+            width: 55px;
+            border-bottom: 3px solid $color-tertiary;
+        }
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: $mobile) {
+            justify-content: flex-start;
+            padding-left: 7%;
+        }
+    }
+    
+    a {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin: 0 25px;
+        background-color: $color-white;
+        color: $color-txt;
+        border-radius: 1rem;
+        width: 400px;
+        height: 75px;
+
+        @media (max-width: $tablet) {
+            margin: 10px 25px;
+        }
+
+        @media (max-width: $mobile) {
+            margin: 10px 15px;
+            width: 345px;
+            min-width: 0;
+        }
+                
+        &:hover .anim {
+            -webkit-animation: expand-spin 500ms ease-out;
+                    animation: expand-spin 500ms ease-out;
+            -webkit-animation-play-state: inherit;
+                    animation-play-state: inherit;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+        }
+
+        @-webkit-keyframes expand-spin {
+            0% { 
+                width: 0; 
+                background-color: $color-tertiary; 
+                opacity: 1;
+            }
+            25% { 
+                width: 65px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            50% { 
+                width: 70px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            75% { 
+                width: 75px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            100% { 
+                width: 80px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+        }
+
+        @keyframes expand-spin {
+            0% { 
+                width: 0; 
+                background-color: $color-tertiary; 
+                opacity: 1;
+            }
+            25% { 
+                width: 65px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            50% { 
+                width: 70px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            75% { 
+                width: 75px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+            100% { 
+                width: 80px; 
+                background-color: $color-tertiary; 
+                opacity: 1; 
+            }
+        }  
+
+        &:hover .checked {
+            -webkit-animation: rotate-check 500ms linear;
+                    animation: rotate-check 500ms linear;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-play-state: inherit;
+                    animation-play-state: inherit;
+
+            @-webkit-keyframes rotate-check {
+                0% {
+                    opacity: 0;
+                }
+                1% {
+                    opacity: 1;
+                    transform: rotate(0deg);
+                    transform-origin: center;
+                }
+                25% {
+                    opacity: 1;
+                    transform: rotate(90deg);
+                    transform-origin: center;
+                }
+                50% {
+                    opacity: 1;
+                    transform: rotate(180deg);
+                    transform-origin: center;
+                }
+                75% {
+                    opacity: 1;
+                    transform: rotate(270deg);
+                    transform-origin: center;
+                }
+                100% {
+                    opacity: 1;
+                    transform: rotate(360deg);
+                    transform-origin: center;
+                }
+            }
+
+            @keyframes rotate-check {
+                0% {
+                    opacity: 0;
+                }
+                1% {
+                    opacity: 1;
+                    transform: rotate(0deg);
+                    transform-origin: center;
+                }
+                25% {
+                    opacity: 1;
+                    transform: rotate(90deg);
+                    transform-origin: center;
+                }
+                50% {
+                    opacity: 1;
+                    transform: rotate(180deg);
+                    transform-origin: center;
+                }
+                75% {
+                    opacity: 1;
+                    transform: rotate(270deg);
+                    transform-origin: center;
+                }
+                100% {
+                    opacity: 1;
+                    transform: rotate(360deg);
+                    transform-origin: center;
+                }
+            }
+        }
+
+        &:hover .restaurants__desserts__desc__large {
+            -webkit-animation: reduce-width 500ms linear;
+                    animation: reduce-width 500ms linear;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-play-state: inherit;
+                    animation-play-state: inherit;
+
+            @-webkit-keyframes reduce-width {
+                0% { width: 280px;}
+                25% { width: 270px;}
+                50% { width: 265px;}
+                75% { width: 260px;}
+                100% { width: 250px;}
+            }
+
+            @keyframes reduce-width {
+                0% { width: 280px;}
+                25% { width: 270px;}
+                50% { width: 265px;}
+                75% { width: 260px;}
+                100% { width: 250px;}
+            }
+        }
+
+        div {
+            display: flex;
+
+            .conteneur__desserts {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                margin: 0 auto;
+
+                h3 {
+                    margin-top: 15px;
+                    margin-bottom: 5px;
+                    margin-left: 10px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                }
+                p {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 0;
+                    margin-bottom: 0;
+        
+                    .restaurants__desserts__desc {
+                        margin-top: 5px;
+                        margin-left: 10px;
+                        margin-bottom: 0;
+                        overflow-x: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        width: calc(70%);
+                    }
+        
+                    .restaurants__desserts__prix {
+                        margin-right: 20px;
+                        margin-top: 5px;
+                        font-weight: bold;
+        
+                        @media (max-width: $mobile) {
+                            flex-shrink: 0;
+                        }
+                    }
+                }
+            }
+
+            .anim {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 75px;
+                width: 0;
+                border-radius: 0 1rem 1rem 0;
+                
+                .checked {
+                    display: inline-block;
+                    font-size: x-large;
+                    color: $color-white;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

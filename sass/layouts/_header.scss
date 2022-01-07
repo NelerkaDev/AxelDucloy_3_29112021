@@ -1,0 +1,63 @@
+//Ce fichier contient le CSS du header
+.header {
+    
+    &__title{
+        display: flex;
+        align-items: center;
+        //position: relative;
+        justify-content: center;
+        font-family: $font-logo-title;
+        font-size: 4rem;
+        font-weight: bold;
+        position: relative;
+
+        @media (max-width: $mobile) {
+            font-size: 2rem;
+        }
+
+        a {
+            display: flex;
+        }
+    }
+    // Icone qui apparait sur les pages de chaque restaurant et non dans la page principale
+    &__icon {
+        display: flex;
+        font-size: xx-large;
+        color: $color-grey;
+        position: absolute;
+        left: 10%;
+        top: 30%;
+
+        @media (max-width: $mobile) {
+            font-size: x-large;
+            top: 17%;
+        }
+    }
+    &__bg {
+        width: 100%;
+        height: 500px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 0 55%;
+           object-position: 0 55%;
+
+        @media (max-width: $mobile) {
+            height: 250px;
+        }
+
+        &__francaise {
+            -o-object-position: 0 62%;
+               object-position: 0 62%;
+        }
+        &__delice {
+            -o-object-position: 0 70%;
+               object-position: 0 70%;
+        }
+        &__enchantee {
+            @media (max-width: $tablet) {
+                -o-object-position: 0 63%;
+                   object-position: 0 63%;
+            }
+        }
+    }
+}

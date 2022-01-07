@@ -1,0 +1,16 @@
+//Importation des variables
+@import './utils/variables';
+//Importation des normes appliquées sur le site
+@import './base/base';
+//Importation de la police d'écriture
+@import './base/typography';
+//Importation de la localisation
+@import './components/localisation';
+//Importation du Header
+@import './layouts/header';
+//Importation du Footer
+@import './layouts/footer';
+//Importation du css spécifiques aux différents restaurants
+@import './layouts/restaurants';
+//Importation du css spécifique à index.html
+@import './pages/accueil';

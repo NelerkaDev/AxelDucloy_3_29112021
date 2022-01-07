@@ -1,0 +1,38 @@
+//Couleurs principales du site
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+//Couleur générale du texte du site
+$color-txt: #000;
+
+//"Tailles" d'écrans
+$tablet : 810px;
+$mobile : 375px;
+
+//Variables police d'écriture
+$font-logo-title: 'Shrikhand', cursive;
+$font-txt: 'Roboto', sans-serif;
+
+//Tailles de polices
+$font-xsmall: 1rem;
+$font-small: 1.2rem;
+$font-medium: 1.5rem;
+$font-large: 2rem;
+
+//Couleur de fond de .localisation
+$color-lightgrey: #eaeaea;
+//Couleur de fond de .explore__
+$color-whiteshade: #f6f6f6;
+//Couleur du sous-titre de .explore
+$color-grey: #656565;
+//Couleur de _btn de .explore
+$color-white: #fff; 
+//Couleur des icones de how__it__works
+$color-icon-inactive : #7e7e7e;
+//Couleur du hover des cards de how__it__works
+$color-hover-how-it-works : #f5edff;
+//Couleur de fond du Footer
+$color-footer: #353535;
+//Couleur du "nouveau" sur la page principale
+$color-new: #008766;
